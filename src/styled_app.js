@@ -9,6 +9,7 @@ export const ContainerApp = styled.div`
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
+    margin-left: 28px;
   }
 `
 
