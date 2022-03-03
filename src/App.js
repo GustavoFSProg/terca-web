@@ -18,37 +18,39 @@ function App() {
   }, [])
 
   return (
-    <ContainerApp>
-      <br />
-      <br />
-      <ContainerTitle>
-        <Link style={{ textDecoration: 'none', fontFamily: 'Hubballi' }} to="/register">
-          Cadastro
-        </Link>
-      </ContainerTitle>
+    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <ContainerApp>
+        <br />
+        <br />
+        <ContainerTitle>
+          <Link style={{ textDecoration: 'none', fontFamily: 'Hubballi' }} to="/register">
+            Cadastro
+          </Link>
+        </ContainerTitle>
 
-      <br />
+        <br />
 
-      {user.map((item) => {
-        return (
-          <ListContainer key={item.id}>
-            <ListWrapper>
-              <Span>
-                <strong style={{ marginRight: '7px' }}>Nome: </strong> {item.name}
-              </Span>
+        {user.map((item) => {
+          return (
+            <ListContainer key={item.id}>
+              <ListWrapper>
+                <Span>
+                  <strong style={{ marginRight: '7px' }}>Nome: </strong> {item.name}
+                </Span>
 
-              <Span>
-                <strong style={{ marginRight: '7px' }}>Email:</strong>
-                {item.email}
-              </Span>
-              <br />
-              <br />
-              <br />
-            </ListWrapper>
-          </ListContainer>
-        )
-      })}
-    </ContainerApp>
+                <Span>
+                  <strong style={{ marginRight: '7px' }}>Email:</strong>
+                  {item.email}
+                </Span>
+                <br />
+                <br />
+                <br />
+              </ListWrapper>
+            </ListContainer>
+          )
+        })}
+      </ContainerApp>
+    </div>
   )
 }
 

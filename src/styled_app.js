@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const ContainerApp = styled.div`
   display: grid;
   grid-template-columns: 2fr 2fr 2fr;
-  margin-left: 58px;
+  /* margin-left: 58px; */
 
   @media screen and (max-width: 900px) {
     display: flex;
@@ -11,7 +11,7 @@ export const ContainerApp = styled.div`
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
-    margin-left: 28px;
+    /* margin-left: 28px; */
   }
 `
 
@@ -24,9 +24,11 @@ export const ListContainer = styled.div`
   width: 22rem;
   margin-bottom: 15px;
   border-radius: 1rem;
+  margin-left: 30px;
 
   @media screen and (max-width: 1000px) {
-    width: 17rem;
+    width: 18rem;
+    margin-left: 0px;
   }
 `
 export const Span = styled.span`
