@@ -8,8 +8,9 @@ export const ContainerApp = styled.div`
   @media screen and (max-width: 900px) {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 20px;
-    margin-left: 28px;
   }
 `
 
