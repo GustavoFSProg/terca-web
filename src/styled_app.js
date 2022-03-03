@@ -11,6 +11,7 @@ export const ContainerApp = styled.div`
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
+    margin-left: 28px;
   }
 `
 
